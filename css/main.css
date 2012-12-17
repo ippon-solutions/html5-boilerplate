@@ -288,6 +288,15 @@ a .project-link p {
 	color: #fff;
 }
 	
+.resize {
+	background: url(../img/resize.png) repeat scroll 0 0 transparent;
+	bottom: 0;
+	height: 80px;
+	position: fixed;
+	right: 0;
+	width: 80px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -396,6 +405,7 @@ a .project-link p {
    ========================================================================== */
 
 @media screen and (min-width: 30em) {
+	
 	.category {
 		float:left;
 		width:100px;
@@ -430,7 +440,15 @@ a .project-link p {
 		max-width:45em;
 		margin:0 auto;
 	}
-		
+}
+
+/* iPad Portrait/Browser */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.resize {display: none;}
+}
+/* Mobile/Browser */
+@media only screen and (max-width: 767px) {
+	.resize {display: none;}
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
