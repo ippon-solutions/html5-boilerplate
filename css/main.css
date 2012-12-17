@@ -15,12 +15,13 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+    color: #333;
 }
 
 body {
     font-size: 1em;
     line-height: 1.4;
+    font-family:'Raleway', Verdana, Helvetica, arial;
 }
 
 /*
@@ -90,25 +91,203 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Custom styles
    ========================================================================== */
 
+.container {
+	padding:10px;
+}
+.header-content {
+    background-color:#FAFAFA;overflow:hidden;height:100%;display:block;
+}
 
+.header-content h1 {
+	float: left;
+	width: 225px;
+}
 
+.header-content h3 {
+	margin:10px 0 0 0;
+}
 
+.header-content h4 {
+	border: none;
+	font-size: 1em;
+	margin:0;
+}
 
+.main-content {
+	background-color:#fff;overflow:hidden;height:100%;display:block;
+	border-top:solid 1px #CCC;
+}
 
+.grey-content {
+	background-color:#F9F9F9;
+}
 
+.d-grey-content {
+	background-color: #f4f4f4;
+}
 
+.footer-content {
+	background-color: #4B4B4B;
+}
 
+.me {
+	display: block;
+	width:150px;
+}
 
+h2, h3, h3 a, h4, h5 {
+	color: #777;
+	text-decoration: none;
+}
 
+h2 {
+	font-size: 1.8em;
+}
 
+h4 {
+	font-size: 1.5em;
+	margin: 8px 0 5px 0;
+	padding: 10px 0 5px 0;
+	border-bottom: dotted 1px #ccc;
+}
+h3, h4, h5 {
+	font-family:'Telex', Verdana, Helvetica, arial;
+}
+h5 {
+	margin-top: 0px;
+	font-size: 1.4em;
+}
 
+.header-content h3 a:hover, h4 {
+	color: #1A92D0;
+}
 
+.project {
+	padding: 0 40px 4px 0;
+	float: left;
+	border-bottom: dotted 1px #ccc;
+}
 
+.project img {
+	height: 45px;
+}
 
+.project .links {
+	display: block;
+	width: 100%;
+}
 
+.project-divider {
+	height: 30px;
+	width: 100%;
+	clear:both;
+}
+
+.project-logo {
+	float: right;
+	height: 100px !important;
+}
+
+.project h5 {
+	margin:25px 0 0 0;
+	font-size: 1.2em;
+}
+
+.project .links p {
+	float: left;
+	padding: 0 10px 0 0;
+}
+
+.star {
+   position: absolute;
+   width: 0; 
+   height: 0; 
+   border-left: 10px solid transparent; 
+   border-right: 10px solid transparent; 
+   border-bottom: 16px solid #ccc;
+   
+}
+.star:after {
+   content:"";
+   position: absolute;
+   width: 0; 
+   height: 0; 
+   border-left: 10px solid transparent; 
+   border-right: 10px solid transparent; 
+   border-top: 16px solid #ccc;
+   margin: 6px 0 0 -10px;
+}
+
+.tech { margin: 0 0 0 25px; }
+
+.projects {
+	float: left;
+}
+
+.project-link {
+	float:left;
+	margin: 0 25px 25px 0;
+	border: dotted 1px #ccc;
+	width: 150px;
+}
+
+.project-link h5 {
+	margin: 0 0 10px 0;
+	text-align: center;
+	text-transform: none;
+	font-size: 1.2em;
+}
+.project-link img {
+	display: block;
+	height: 120px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+a .project-link p {
+	text-decoration: none;
+	color: #333;
+	text-align: center;
+}
+
+.skill-line {
+	width:100%;float:left;
+	padding: 10px 0 0 0;
+}
+
+.scale, .category-header {
+	width:25%;
+	height:20px;
+	float:left;
+	padding: 3px 1px 3px 1px;
+}
+
+.category-header { background-color: #EEE; }
+.learning { background-color: #FFCC66; }
+.good { background-color: #66CCFF; }
+.awesome { background-color: #33CC00; }
+
+.category {
+	width:100%;
+	display:block;
+}
+
+.category-skill {
+	height:10px;float:left;
+	margin-top: 4px;
+}
+
+.footer {
+	padding: 10px;
+}
+
+.footer p, .footer a {
+	color: #fff;
+}
+	
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -216,8 +395,42 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media screen and (min-width: 30em) {
+	.category {
+		float:left;
+		width:100px;
+	}
+	
+	.me {
+		float: right;
+		padding: 0 0 10px 10px;
+		width:240px;
+	}
+	.header-meta {
+		float:right;
+		text-align: right;
+	}
+}
+
+@media screen and (min-width: 34em) {
+	
+	.project {
+		width:320px;
+		height: 315px;
+	}
+	
+	.full {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 40.5em) {
+	.container {
+		max-width:45em;
+		margin:0 auto;
+	}
+		
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
