@@ -138,6 +138,10 @@ textarea {
 	width:150px;
 }
 
+.git-profile img {
+	height: 45px;
+}
+
 h2, h3, h3 a, h4, h5 {
 	color: #777;
 	text-decoration: none;
@@ -229,9 +233,9 @@ h5 {
 
 .project-link {
 	float:left;
-	margin: 0 25px 25px 0;
+	margin: 0 7px 7px 0;
 	border: dotted 1px #ccc;
-	width: 150px;
+	width: 140px;
 }
 
 .project-link h5 {
@@ -419,6 +423,15 @@ a .project-link p {
 	.header-meta {
 		float:right;
 		text-align: right;
+	}
+	
+	.git-profile {
+		float: right;
+	}
+	
+	.project-link {
+		margin: 0 13px 13px 0;
+		width: 150px;
 	}
 }
 
